@@ -1,0 +1,17 @@
+nav .subnav{display: none;}
+nav .margin:hover .subnav{display: block;cursor: pointer;}
+
+#banner{border: solid 6px #E8E8E8;padding: 10px;margin-top: 20px;}
+#banner img{float: left;width: 720px;height: 380px;}
+#banner .login{float: right;width: 408px;margin-top: 100px;}
+.login p{font: 12px/16px "";color: #999;width: 360px;height: 16px;}
+.login p span{float: left;}
+.login p a{float: right;color: #5c5c5b;}
+.login input{background: url(http://img.xpf.cc/logo/ico/usess.gif) no-repeat;width: 350px;height: 34px;border: 1px solid #ccc;font: 14px/34px "";padding: 1px 2px;margin-bottom: 10px;}
+.login input.user{background-position: 320px -72px;}
+.login input.pass{background-position: 320px -106px;}
+.login input.btn{background-position:0px -146px;width: 307px;height: 34px;margin: 20px 0 0;border: none;}
+.login .reg{display: block;font: 16px/20px "";background: url(http://img.xpf.cc/logo/ico/usess.gif) 0px -213px;width: 115px;height: 32px;margin: 40px 0 0 290px;}
+
+
+

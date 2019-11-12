@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/car.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/msg.css"/> -->
+	</head>
+	<script src="libs/jquery.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/car.js"></script>
+	<body>
+		<section id="public" class="margin"></section>
+		<section id="menu" class="margin">
+			<ul class="clear">
+				<li class="i0">1、我的进货单</li>
+				<li class="i1"></li>
+				<li class="i2">2、确认订单信息</li>
+				<li class="i3"></li>
+				<li class="i2">3、提交订单</li>
+				<li class="i3"></li>
+				<li class="i2">4、确认收货</li>
+				<li class="i3"></li>
+				<li class="i2">5、完成</li>
+			</ul>
+		</section>
+		<section id="main" class="margin">
+			<div class="main-c">
+				<table>
+				<thead>
+					<tr>
+						<th><input type="checkbox"/></th>
+						<th>产品图片</th>
+						<th>产品名称</th>
+						<th>价格</th>
+						<th>产品数量</th>
+						<th>小计金额</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="t1">
+						<td colspan="7">
+							<p>
+							<span>对不起，你还没有挑选货物呢</span>
+							"如果未登录，导致进货单为空，请您 "<a href="login.html">马上登录</a></p>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td width="20px">1</td>
+						<td><img src="http://img.xpf.cc/products_img/m/p/2019/11/11/app/LkzzzAJfWtJf6323100qJ.jpg" ></td>
+						<td>金凤凰</td>
+						<td>￥55.00元</td>
+						<td>购买数量：<input type="number" min="1"/></td>
+						<td><span>小计:</span></td>
+						<td><span>&times;</span></td>
+					</tr> -->
+				</tbody>
+			</table>
+			</div>
+		</section>
+		<section id="activity" class="margin">
+			<h3 class="clear">
+				<i></i><span>你可能感兴趣的活动</span><i></i>
+			</h3>
+			<div class="img">
+				<img src="http://img.xpf.cc/products_img/ad/AdImg/2014/08/21/GhWzzzzqWqzq7124.jpg" />
+				<img src="http://img.xpf.cc/products_img/ad/AdImg/2014/11/23/GkWJzbzbWqzb7787.jpg" class="last" />
+				<s></s>
+			</div>
+		</section>
+		<footer>
+			<div class="margin">
+				<div class="footer-l clear">
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				</div>
+				<div class="footer-r">
+					<p>服务热线：400-8824-007(免长途费用) 投诉电话：0577-88309377 工作时间：8:00-22:00</p>
+					<p>温州走俏鞋批发网 版权所有 Copyright © 2008-2015 XPF.cc All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$("#public").load("http://localhost/shoes/public.html")
+		new Car({
+			tbody:document.querySelector("tbody"),
+			url:"http://localhost/shoes/data/goods.json"
+		})
+	</script>
+</html>

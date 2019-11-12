@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/msg.css" />
+	</head>
+	<script src="libs/jquery.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/msg.js"></script>
+	<body>
+		<section id="public"></section>
+		<section id="banner" class="margin clear">
+			<a href="login.html" class="a0">您还没有登录，去登录</a>
+		</section>
+		<footer>
+			<div class="margin">
+				<div class="footer-l clear">
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				</div>
+				<div class="footer-r">
+					<p>服务热线：400-8824-007(免长途费用)  投诉电话：0577-88309377 工作时间：8:00-22:00</p>
+					<p>温州走俏鞋批发网 版权所有 Copyright © 2008-2015 XPF.cc All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$("#public").load("http://localhost/shoes/public.html");
+		$(".aside").children("ul").children("li").hover(function() {
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".cont").children("img").removeClass(" active").eq($(this).index()).addClass(" active");
+		})
+		new Msg({
+			banner:document.getElementById("banner"),
+			url:"http://localhost/shoes/data/goods.json"
+		})
+	</script>
+</html>

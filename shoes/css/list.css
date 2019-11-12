@@ -1,0 +1,33 @@
+nav .subnav{display: none;}
+nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
+
+#banner img{width: 100%;height: 95px;margin: 10px 0;}
+#search{background: #d2364b;}
+#search span{font: 12px/36px "";color: #fff;display: inline-block;float: left;padding-left: 10px;}
+#search input.txt{width: 130px;line-height: 18px;border: solid 1px #D2364B;margin: 8px 4px 0px 10px;float: left;}
+#search input.sub{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -1096px;width: 23px;height: 20px;overflow: hidden; border: none;cursor: pointer;margin-top: 8px;float: left;}
+
+#nav2{}
+#nav2 .nav-t{border:1px solid #CCCCCC;margin: 10px 0;}
+#nav2 .nav-t dl{float: left;width: 100%;font: 12px/27px "";border-bottom: 1px solid #ccc;}
+#nav2 .nav-t dl:last-child{border-bottom: 0;}
+#nav2 .nav-t dl dt{color: #f56293;padding-left: 18px;width: 100px;display: inline-block;float: left;}
+#nav2 .nav-t dl dd{color: #666;float: left;padding: 0px 30px 0px 10px;}
+#nav2 .nav-t dl dd:hover{color: #D2364C;text-decoration:underline;}
+
+#main{}
+#main h3{font: 18px/30px "";color: #666;}
+#main ul{}
+#main ul li{float: left;border: 1px solid #ccc;margin-right: 15px;margin-bottom: 10px;}
+#main ul li a{width: 220px;height: 165px;overflow: hidden;display:block;}
+#main ul li a img{width: 165px;height: 165px;margin: 0 27.5px;}
+#main ul li span{color: #FF4400;font: 700 16px/20px "";}
+#main ul li p{display:block;width:205px;font: 12px/30px "";text-overflow: ellipsis;white-space: nowrap; overflow: hidden;}
+#main ul li .li-c{background: url(http://img.xpf.cc/logo/ico/ico2.gif) no-repeat;height: 24px ;}
+#main ul li .li-c .ku{background-position: 0px -47px;width: 16px;height: 16px;display: inline-block;}
+#main ul li .li-c .zf{background: url(http://img.xpf.cc/logo/ico/ico2.gif) no-repeat 0px -383px;width: 16px;height: 16px;display: inline-block;margin-left: 5px;}
+#main ul li .li-c .wz{color: #999999;width: 150px;height: 16px;display: inline-block;text-align: right;font: 12px/20px "";}
+#main ul li .li-b{height: 25px ;}
+#main ul li .li-b a{display: block;width: 77px; height: 21px; background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -1692px;float: left;}
+#main ul li .li-b a:hover{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat -77px -1692px;}
+#main ul li .li-b span{display: inline-block;float: right;overflow: hidden;color: #999;font:400 12px/20px ""}

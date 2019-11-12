@@ -1,0 +1,36 @@
+nav .subnav{display: none;}
+nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
+
+#menu{}
+#menu ul{margin: 20px 0;}
+#menu ul li{float: left;font: 14px/32px "";color: #FFFFFF;height: 32px;width: 147px;}
+#menu ul li.i0{background-color: #FF8E42;}
+#menu ul li.i1{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -760px;width: 20px;height: 32px;}
+#menu ul li.i2{background-color: #B4AFAA;}
+#menu ul li.i3{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat -136px -760px;width: 20px;height: 32px;}
+
+#main .main-c{width: 100%;}
+#main .main-c table{width: 100%;}
+#main .main-c thead{background:#7e7c7a ;color: #fff;}
+#main .main-c tr{width: 100%;height: 30px;}
+#main .main-c thead tr th{height: 30px;font: 14px/30px "";}
+#main .main-c tbody tr.t1{border: solid 1px #ACB1BA;margin: 15px auto 0px auto;font: 12px/40px "";height: 150px;background: url(http://img.xpf.cc/logo/cart/carisnull.jpg) #FFFFFF no-repeat 50px 40px;width: 100%;;margin-top: 10px;}
+#main .main-c tbody tr.t1 td{width: 100%;}
+#main .main-c tbody tr td p{margin: 40px 0 0 200px;}
+#main .main-c tbody tr td p span{font:700 14px/40px "";}
+#main .main-c tbody tr td p a{font-size: 12px;color: #1859A5;}
+#main .main-c tbody tr{width: 100%;}
+#main .main-c tbody tr td{font: 18px/144px "";}
+#main .main-c tbody tr td img{width: 193px;height: 144px;}
+#main .main-c tbody tr td input{width:150px;}
+#main .main-c tbody tr td span{font-size: 20px;height: 144px;}
+
+
+#activity{height: 260px;}
+#activity h3{height: 25px;margin: 10px 0;}
+#activity h3 i{width:500px;display: block;float: left;background: url(http://img.xpf.cc/logo/ico/index.gif) no-repeat 0px -373px;height: 25px;}
+#activity h3 span{display:inline-block;height: 25px;float: left;with:197px;margin: 0 5px;font: 18px/25px "";color:#565656;}
+#activity .img {height: 155px;}
+.img img{float: left;}
+.img img.last{margin-left: 10px;}
+.img s{display: block;background: url(http://img.xpf.cc/logo/ico/index.gif) #F3F1F4 no-repeat 210px -445px;height: 40px;width: 1200px;float: left;margin-top: 10px;}

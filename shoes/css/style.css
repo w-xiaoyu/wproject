@@ -1,0 +1,51 @@
+.margin{width: 1200px;margin: 0 auto;}
+
+#top{height:32px;border-bottom:1px solid #ccc;}
+#top ul{float: left;}
+#top ul li{float: left;width: 60px;height: 32px;font:12px/32px "";text-align: center;}
+#top ul li a{display:black;color: #666666;border-right:1px solid # 666;}
+#top .right{float:right;}
+#top .right a{display:block;font: 12px/32px "";color: #666666;width: 80px;float:left;}
+#top .right a i{display:block;background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -988px;width: 102px;height: 24px;padding-left: 32px;margin-top: 3px;}
+
+header{height:126px;margin-top: 5px;}
+header a{display: block;margin-top: 30px;float: left;}
+.logo img{width: 215px;height: 77px;}
+.sublogo img{width: 139px;height: 77px;}
+header .search{margin-top: 30px;float: left;}
+header .search span{display:block;float:left;font: 12px/20px "";color: #666;cursor: pointer;margin:2px;}
+header .search span.active{color:#FF7300;}
+header .search input{padding: 1px 0;}
+header .search .txt{width: 410px;height: 30px;font: 14px/32px "";color: #666666;border: solid 2px #D2364C;}
+header .search .sub{background: #D2364C;width: 86px;height: 38px;border:0;}
+header .ewm{float:left;width: 229px;height: 126px;margin-top: 5px;}
+
+nav{height: 38px;margin-top: 5px;background: #f10582;position: relative;}
+nav p{float:left;font: 18px/38px "";width: 177px;height: 38px;background: #b12f5b;padding-left: 18px;color: #fff;}
+nav ul{float:left;}
+nav ul li{float: left;padding: 0 10px;}
+nav ul li a{font: 16px/38px "";color: #fff;}
+.subnav{width: 194px;height: 364px;border: 1px solid #D2364C;position: absolute;top: 38px;background: #fff;}
+.subnav ul{width: 195px;height: 364px;}
+.subnav ul li{width: 195px;padding:0 5px;float: left;background: url(http://img.xpf.cc/logo/ico/jpgall.gif) no-repeat -194px -222px;position: relative;}
+.subnav ul li a{display: block;font: 14px/32px "";padding-left: 18px;color: #353535;}
+.subnav ul li.hot a{color: #e80c6b;}
+.subnav ul li .box{display: none;position: absolute;left: 195px;top: 0;width: 530px;background-color: #FFFFFF;z-index: 103;border: solid 1px #CECECE;}
+.subnav ul li:hover{background: url(http://img.xpf.cc/logo/ico/jpgall.gif) no-repeat 0 -222px;}
+.subnav ul li:hover .box{display: block;}
+.subnav ul li dl{width: 530px;float: left;}
+.subnav ul li dl dt{color: #D2364C;font: 12px/32px "";float: left;margin-left: 18px;}
+.subnav ul li dl dd{font: 12px/32px "";color: #353535;float: left;margin-left: 18px;}
+
+footer{background: #f5f5f5;padding: 28px 0 ;border-top: solid 3px #D7237E;height: 49px;}
+footer .footer-l{margin-left: 100px;width: 220px;float: left;}
+footer .footer-l a{display:block;background:url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat;float: left;}
+footer .footer-l a.a1{width: 60px;height: 27px;background-position:0px -1262px;}
+footer .footer-l a.a2{width: 30px;height: 30px;background-position:0px -1295px;}
+footer .footer-l a.a3{width: 92px;height: 31px;background-position:0px -1389px;}
+footer .footer-r{width: 750px;float: left;}
+footer .footer-r p{font: 12px/18px "";text-align: center;color: #373636;}
+
+
+
+

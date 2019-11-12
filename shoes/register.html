@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>会员注册</title>
+		<link rel="stylesheet" href="css/public.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/register.css"/>
+	</head>
+	<script src="libs/jquery.js"></script>
+	<body>
+		<div id="top">
+			<div class="margin clear">
+				<ul class="clear">
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">会员政策</a></li>
+					<li><a href="register.html">免费注册</a></li>
+					<li><a href="login.html">会员登录</a></li>
+					<li><a href="#">QQ登录</a></li>
+				</ul>
+				<div class="right">
+					<a href="#">我的走俏</a>
+					<a href="#">我要进货</a>
+					<a href="#"><i>购物车</i></a>
+				</div>
+			</div>
+		</div>
+		<header class="margin clear">
+			<a href="#" class="logo"><img src="http://img.xpf.cc/logo/site/site.gif"/></a>
+			<a href="#" class="sublogo"><img src="http://img.xpf.cc/logo/site/users.gif"/></a>
+		</header>
+		<section id="public"></section>
+		<section id="banner" class="margin">
+			<div class="title">
+				<a href="#" class="active">买家会员注册</a>
+				<a href="login.html">会员登录</a>
+			</div>
+			<form class="reg">
+				<table>
+					<tbody>
+						<tr>
+							<td class="t1"><span><i>*</i>账户名：</span></td>
+							<td class="t2">
+								<input type="text" class="user" />
+								<span>请输入2至10位字符数字和中文</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1"><span><i>*</i>请设置密码：</span></td>
+							<td class="t2">
+								<input type="password" class="pass" />
+								<span>请输入6至18键盘上的字符包括英文、数字、特殊符号</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1"><span><i>*</i>请确认密码：</span></td>
+							<td class="t2">
+								<input type="password" class="pass2" />
+								<span></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1"><span><i>*</i>联系人手机号码：</span></td>
+							<td class="t2">
+								<input type="tel" class="tel" />
+								<span>请输入11位手机号码</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1"><span><i>*</i>详细地址：</span></td>
+							<td class="t2">
+								<input type="text" class="location" />
+								<span>格式：2至100 位字符数字和中文组成。</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="t1"></td>
+							<td class="t2">
+								<input type="submit" class="sub" value=""/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+		<footer>
+			<div class="margin">
+				<div class="footer-l clear">
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				</div>
+				<div class="footer-r">
+					<p>服务热线：400-8824-007(免长途费用)  投诉电话：0577-88309377 工作时间：8:00-22:00</p>
+					<p>温州走俏鞋批发网 版权所有 Copyright © 2008-2015 XPF.cc All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$("#public").load("http://localhost/shoes/public.html nav")
+	</script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品列表</title>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/list.css" />
+	</head>
+	<script src="libs/jquery.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/list.js"></script>
+	<body>
+		<section id="public"></section>
+		<section id="banner" class="margin">
+			<img src="http://img.xpf.cc/products_img/ad/AdImg/2015/07/30/HgJAzttWootW6414.jpg">
+		</section>
+		<section id="search" class="margin clear">
+			<span>走俏网 > 女靴批发 > 女士冬季短靴批发</span>
+			<input type="text" class="txt" />
+			<input type="submit" class="sub" value=""/>
+		</section>
+		<section id="nav2" class="margin">
+			<div class="nav-t clear">
+					<dl>
+						<dt>单鞋分类</dt>
+						<dd>女式时尚单鞋</dd>
+						<dd>高跟单鞋</dd>
+						<dd>平底单鞋</dd>
+						<dd>坡跟单鞋</dd>
+						<dd>女式内增高鞋</dd>
+					</dl>
+					<dl>
+						<dt>款式分类</dt>
+						<dd>女式时尚单鞋</dd>
+						<dd>高跟单鞋</dd>
+						<dd>平底单鞋</dd>
+						<dd>坡跟单鞋</dd>
+						<dd>女式内增高鞋</dd>
+					</dl>
+					<dl>
+						<dt>新旧分类</dt>
+						<dd>女式时尚单鞋</dd>
+						<dd>高跟单鞋</dd>
+						<dd>平底单鞋</dd>
+						<dd>坡跟单鞋</dd>
+						<dd>女式内增高鞋</dd>
+					</dl>
+			</div>
+		</section>
+		<section id="main" class="margin">
+			<h3>全部产品</h3>
+			<div class="shoes">
+				<ul class="clear listAll">
+					<!-- <li>
+						<a href="msg.html"><img src="http://img.xpf.cc/products_img/m/p/2019/10/28/3781218078_20_1.jpg"/></a>
+						<span>￥133.00</span>
+						<p>投策念头记得发</p>
+						<div class="li-c">
+							<span class="ku"></span>
+							<span class="zf"></span>
+							<span class="wz">温州</span>
+						</div>
+						<div class="li-b clear">
+							<a href="car.html"></a>
+							<span>2色全码起批</span>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="margin">
+				<div class="footer-l clear">
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				</div>
+				<div class="footer-r">
+					<p>服务热线：400-8824-007(免长途费用)  投诉电话：0577-88309377 工作时间：8:00-22:00</p>
+					<p>温州走俏鞋批发网 版权所有 Copyright © 2008-2015 XPF.cc All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$("#public").load("http://localhost/shoes/public.html")
+		new ListAll({
+			url: "http://localhost/shoes/data/goods.json",
+			cont: document.querySelector(".listAll"),
+		})
+	</script>
+</html>

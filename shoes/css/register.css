@@ -1,0 +1,24 @@
+nav .subnav{display: none;}
+nav .margin:hover .subnav{display: block;cursor: pointer;}
+
+#banner{}
+#banner .title{font: 18px/36px "";border-bottom:1px solid #D7237E;margin-top: 20px;height: 38px;}
+#banner .title a{display:inline-block;color: #333;border: solid 1px #C4C2C1;margin-left: 10px;border-bottom: 0;height: 38px;padding: 0 15px;}
+#banner .title a.active{color: #ed383d;border-left: solid 1px #D7237E;border-right: solid 1px #D7237E;border-top: solid 2px #D7237E;}
+
+#banner .reg{margin-top: 20px;width: 100%;}
+.reg tr{width: 100%;}
+.reg tr td{font: 14px/52px "";color:#999 ;}
+.reg tr td.t1{width: 280px;height: 52px;}
+.reg tr td.t2{width: 920px;height: 52px;}
+
+#banner .reg input{width: 272px;height: 38px;padding: 1px;border: 1px solid #ccc;}
+#banner .reg input.user{background: url(http://img.xpf.cc/logo/ico/usess.gif) no-repeat 240px -72px ;}
+#banner .reg input.pass{background: url(http://img.xpf.cc/logo/ico/usess.gif) no-repeat 240px -106px ;}
+#banner .reg input.pass2{background: url(http://img.xpf.cc/logo/ico/usess.gif) no-repeat 240px -106px ;}
+.reg tr td.t1 span{display:inline-block;color: #999;margin-left: 120px;}
+.reg tr td i{color: #FF0000;padding-right: 8px;font-weight: bolder;font-size: 18px;}
+.reg tr td.t2 span{display:inline-block;margin-left: 15px;border: 1px solid #ccc;font: 12px/36px "";}
+.reg tr td.t2 .sub{width: 270px;height: 36px;background: url(http://img.xpf.cc/logo/ico/usess.gif) 0px 0px;border: none;margin:50px 0  80px 0;}
+
+

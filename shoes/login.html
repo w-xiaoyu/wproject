@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>会员登录</title>
+		<link rel="stylesheet" href="css/public.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/login.css"/>
+	</head>
+	<script src="libs/jquery.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/login.js"></script>
+	<body>
+		<div id="top">
+			<div class="margin clear">
+				<ul class="clear">
+					<li><a href="#">付款方式</a></li>
+					<li><a href="#">会员政策</a></li>
+					<li><a href="register.html">免费注册</a></li>
+					<li><a href="login.html">会员登录</a></li>
+					<li><a href="#">QQ登录</a></li>
+				</ul>
+				<div class="right">
+					<a href="#">我的走俏</a>
+					<a href="#">我要进货</a>
+					<a href="#"><i>购物车</i></a>
+				</div>
+			</div>
+		</div>
+		<header class="margin clear">
+			<a href="#" class="logo"><img src="http://img.xpf.cc/logo/site/site.gif"/></a>
+			<a href="#" class="sublogo"><img src="http://img.xpf.cc/logo/site/users.gif"/></a>
+		</header>
+		<section id="public"></section>
+		<section id="banner" class="margin clear">
+			<img src="http://img.xpf.cc/products_img/ad/AdImg/2019/03/11/LczzzAzWAfzW3088.jpg" />
+			<form class="login">
+				<p>请输入你的用户名</p>
+				<input type="text" class="user"/>
+				<p>
+					<span>密码</span>
+					<a href="#">忘记密码</a>
+				</p>
+				<input type="password" class="pass" />
+				<input type="button" class="btn"/>
+				<a href="register.html" class="reg"></a>
+				<p class="warn"></p>
+			</form>
+		</section>
+		<footer>
+			<div class="margin">
+				<div class="footer-l clear">
+					<a href="#" class="a1"></a>
+					<a href="#" class="a2"></a>
+					<a href="#" class="a3"></a>
+				</div>
+				<div class="footer-r">
+					<p>服务热线：400-8824-007(免长途费用)  投诉电话：0577-88309377 工作时间：8:00-22:00</p>
+					<p>温州走俏鞋批发网 版权所有 Copyright © 2008-2015 XPF.cc All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$("#public").load("http://localhost/shoes/public.html nav")
+		new Login();
+	</script>
+</html>
