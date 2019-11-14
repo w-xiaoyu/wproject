@@ -34,9 +34,9 @@ class Msg {
 									<div class="min"></div>
 								</div>
 								<div class="big">
-									<img src="${this.res[i].img1}" class="big2 active"/>
-									<img src="${this.res[i].img2}" class="active"/>
-									<img src="${this.res[i].img3}" class="active"/>
+									<img src="${this.res[i].img1}" class="big2"/>
+									<img src="${this.res[i].img2}" class=""/>
+									<img src="${this.res[i].img3}" class=""/>
 								</div>
 								<ul>
 									<li class="active"/><img src="${this.res[i].img1}"/></li>
@@ -59,14 +59,19 @@ class Msg {
 			}
 		}
 		this.banner.innerHTML = str;
+		this.card();
+		this.big2 = document.querySelector(".big2");
+		this.big();
+	}
+	card(){
+		var that = this;
 		$(".aside-c").children("ul").children("li").hover(function() {
 			$(this).addClass("active").siblings().removeClass("active");
 			$(".aside-c").children(".cont").children("img").removeClass(" active").eq($(this).index()).addClass(" active");
 			$(".aside-c").children(".big").children("img").removeClass("big2").eq($(this).index()).addClass(" big2");
+			that.big2 = document.querySelector(".big2");
 		})
-		this.big();
 	}
-
 	addEvent() {
 		//委托修改的事件
 		var that = this;
@@ -116,15 +121,20 @@ class Msg {
 		var wrap = document.querySelector(".cont");
 		var box = document.querySelector(".min");
 		var bigArea = document.querySelector(".big");
-		var big2 = document.querySelector(".big2");
-		console.log(wrap);
+		// var imgs = document.querySelectorAll("img")
+		;
+		// var big2 = document.querySelector(".big2");
+		var that = this;
 		wrap.onmouseenter = function() {
+			// imgs[0].style.display = "none"
+			// imgs[1].style.display = "none"
+			// imgs[2].style.display = "none"
             box.style.display = "block";
-			big2.style.display = "block";
+			that.big2.style.display = "block";
 			bigArea.style.display = "block";
-			
             var r = (wrap.clientWidth - box.clientWidth) / (800 - bigArea.clientWidth);
             // 绑定mousemove事件
+			var _that = that;
             document.onmousemove = function(e) {
                 // 计算鼠标在页面中的距离
                 var mouseX =  e.pageX;
@@ -147,8 +157,8 @@ class Msg {
                 }
                 box.style.left = resultX + "px";
                 box.style.top = resultY + "px";
-                big2.style.left = -resultX / r + "px";
-                big2.style.top = -resultY / r + "px";   
+                _that.big2.style.left = -resultX / r + "px";
+                _that.big2.style.top = -resultY / r + "px";   
             }
         }
         wrap.onmouseleave = function() {

@@ -12,7 +12,7 @@ $(".banner1").banner({
 	delayTime: 2500,
 	moveTime: 200
 })
-
+console.log($(".banner2").find(".btns").find(".left"))
 $(".banner2").banner({
 	imgs: $(".banner2").find("img"),
 	left: $(".banner2").find(".btns").find(".left"),
