@@ -10,9 +10,9 @@ class Register {
 			if (e.target.className == "sub") {
 				that.user = e.target.parentNode.parentNode.parentNode.firstElementChild.lastElementChild.firstElementChild.value;
 				that.pass = e.target.parentNode.parentNode.parentNode.firstElementChild.nextElementSibling.lastElementChild.firstElementChild.value;
-				// console.log(that.user);
-				// console.log(that.pass);
-				that.setCookie();
+				if(that.user != "" && that.pass != ""){
+					that.setCookie();	
+				}
 			}
 		}
 	}
@@ -24,11 +24,15 @@ class Register {
 				user: this.user,
 				pass: this.pass
 			})
+			window.location.href = "login.html"
 		} else {
 			var onoff = true; //true表示是新用户
 			for (var i = 0; i < this.member.length; i++) {
 				//判断当前用户，新还是旧
 				if (this.member[i].user === this.user) {
+					alert("该该用户名已经存在！")
+					this.user = "";
+					this.pass = "";
 					onoff = false;
 				}
 			}
@@ -37,6 +41,7 @@ class Register {
 					user: this.user,
 					pass: this.pass
 				});
+				window.location.href = "login.html"
 			}
 		}
 		setCookie("member", JSON.stringify(this.member));
