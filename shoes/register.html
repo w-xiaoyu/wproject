@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css"/>
 		<link rel="stylesheet" href="css/register.css"/>
 	</head>
-	<script src="libs/jquery.js"></script>
+	
 	<body>
 		<div id="top">
 			<div class="margin clear">
@@ -41,35 +41,35 @@
 						<tr>
 							<td class="t1"><span><i>*</i>账户名：</span></td>
 							<td class="t2">
-								<input type="text" class="user" />
+								<input type="text" class="user" required=true maxlength="10" minlength="2" />
 								<span>请输入2至10位字符数字和中文</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="t1"><span><i>*</i>请设置密码：</span></td>
 							<td class="t2">
-								<input type="password" class="pass" />
+								<input type="password" class="pass" required=true maxlength="18" minlength="6" id="pass"/>
 								<span>请输入6至18键盘上的字符包括英文、数字、特殊符号</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="t1"><span><i>*</i>请确认密码：</span></td>
 							<td class="t2">
-								<input type="password" class="pass2" />
+								<input type="password" class="pass2" equalTo="#pass"/>
 								<span></span>
 							</td>
 						</tr>
 						<tr>
 							<td class="t1"><span><i>*</i>联系人手机号码：</span></td>
 							<td class="t2">
-								<input type="tel" class="tel" />
+								<input type="tel" class="tel" digits=true maxlength="11" minlength="11"/>
 								<span>请输入11位手机号码</span>
 							</td>
 						</tr>
 						<tr>
 							<td class="t1"><span><i>*</i>详细地址：</span></td>
 							<td class="t2">
-								<input type="text" class="location" />
+								<input type="text" class="location" maxlength="100" minlength="2"/>
 								<span>格式：2至100 位字符数字和中文组成。</span>
 							</td>
 						</tr>
@@ -97,7 +97,17 @@
 			</div>
 		</footer>
 	</body>
+	<script src="libs/jquery.js"></script>
+	<script src="libs/jquery.validate.js"></script>
+	<script src="libs/jquery.validate.messages_zh.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/register.js"></script>
 	<script>
 		$("#public").load("http://localhost/shoes/public.html nav")
+		$('form').validate();
+		new Register({
+			tbody:document.querySelector("tbody")
+		});
 	</script>
 </html>

@@ -7,9 +7,6 @@
 		<link rel="stylesheet" href="css/style.css"/>
 		<link rel="stylesheet" href="css/login.css"/>
 	</head>
-	<script src="libs/jquery.js"></script>
-	<script src="js/ajax.js"></script>
-	<script src="js/login.js"></script>
 	<body>
 		<div id="top">
 			<div class="margin clear">
@@ -36,12 +33,12 @@
 			<img src="http://img.xpf.cc/products_img/ad/AdImg/2019/03/11/LczzzAzWAfzW3088.jpg" />
 			<form class="login">
 				<p>请输入你的用户名</p>
-				<input type="text" class="user"/>
+				<input type="text" class="user" required=true maxlength="10" minlength="2"/>
 				<p>
 					<span>密码</span>
 					<a href="#">忘记密码</a>
 				</p>
-				<input type="password" class="pass" />
+				<input type="password" class="pass" required=true maxlength="18" minlength="6"/>
 				<input type="button" class="btn"/>
 				<a href="register.html" class="reg"></a>
 				<p class="warn"></p>
@@ -61,8 +58,16 @@
 			</div>
 		</footer>
 	</body>
+	<script src="libs/jquery.js"></script>
+	<script src="libs/jquery.validate.js"></script>
+	<script src="libs/jquery.validate.messages_zh.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/login.js"></script>
 	<script>
-		$("#public").load("http://localhost/shoes/public.html nav")
-		new Login();
+		$("#public").load("http://localhost/shoes/public.html nav");
+		new Login({
+			login:document.querySelector(".login")
+		})
 	</script>
 </html>

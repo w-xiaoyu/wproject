@@ -7,8 +7,10 @@
 		<link rel="stylesheet" href="css/public.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/list.css" />
+		<link rel="stylesheet" href="css/pagination.css">
 	</head>
 	<script src="libs/jquery.js"></script>
+	<script src="libs/jquery.pagination.js"></script>
 	<script src="js/ajax.js"></script>
 	<script src="js/cookie.js"></script>
 	<script src="js/list.js"></script>
@@ -69,6 +71,7 @@
 						</div>
 					</li> -->
 				</ul>
+				<div class="pagination"></div>
 			</div>
 		</section>
 		<footer>
@@ -91,5 +94,15 @@
 			url: "http://localhost/shoes/data/goods.json",
 			cont: document.querySelector(".listAll"),
 		})
+		$(".pagination").pagination(100,{
+		items_per_page:2,
+		num_display_entries:3,
+		num_edge_entries:2,
+		current_page:10,
+		prev_text:"上一页",
+		next_text:"下一页",
+		ellipse_text:"...",
+		prev_show_always:false
+	})
 	</script>
 </html>

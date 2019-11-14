@@ -1,41 +1,37 @@
 class Login {
-	constructor() {
-		this.user = document.querySelector(".user");
-		this.pass = document.querySelector(".pass");
-		this.login = document.querySelector(".btn");
-		this.p = document.querySelector(".warn");
-		this.url = "http://localhost/shoes/data/login.pbp";
-		this.init();
+	constructor(options) {
+		this.login = options.login;
 		this.addEvent();
 	}
-	init() {
+	addEvent(){
 		var that = this;
-		this.login.onclick = function() {
-			console.log(2);
-			ajaxGet(that.url, function(res) {
-				that.res = JSON.parse(res)
-				that.display();
-			}, {
-				user: that.user.value,
-				pass: that.pass.value
-			})
+		this.login.onclick = function(e) {
+			if (e.target.className == "btn") {
+				that.user = e.target.parentNode.firstElementChild.nextElementSibling.value;
+				that.pass = e.target.previousElementSibling.value;
+				// console.log(that.user);
+				// console.log(that.pass);
+				that.getCookie();
+			}
 		}
 	}
-	this.addEvent(){
-		
-	}
-	display() {
-		console.log(1);
-		switch (this.res.statu) {
-			case 0:
-				this.p.innerHTML = "登录成功";
+	getCookie(){
+		this.member = getCookie("member") ? JSON.parse(getCookie("member")) : [];
+		for(var i=0;i<this.member.length;i++){
+			// console.log(this.user)
+			if(this.user == "" || this.pass== ""){
+					alert("用户名或密码不能为空！");
+					break;
+			}
+			else if(this.user == this.member[i].user && this.pass == this.member[i].pass){
+				alert("登录成功！");
+				window.location.href="list.html";
 				break;
-			case 1:
-				this.p.innerHTML = '密码错误';
-				break;
-			case 2:
-				this.span.innerHTML = "该用户名不存在" + "<a href='register.html'>去注册</a>";
-				break;
+			}
+			else if((this.user == this.member[i].user && this.pass != this.member[i].pass)){
+				alert("用户名或密码错误！！");
+				// break;
+			}
 		}
 	}
 }

@@ -32,12 +32,12 @@
 				<table>
 				<thead>
 					<tr>
-						<th><input type="checkbox"/></th>
+						<th><input type="checkbox" class="checkAll"/></th>
 						<th>产品图片</th>
-						<th>产品名称</th>
-						<th>价格</th>
-						<th>产品数量</th>
-						<th>小计金额</th>
+						<th class="tn">产品名称</th>
+						<th class="tj">价格</th>
+						<th class="ts">产品数量</th>
+						<th class="tq">小计金额</th>
 						<th>操作</th>
 					</tr>
 				</thead>
@@ -49,15 +49,6 @@
 							"如果未登录，导致进货单为空，请您 "<a href="login.html">马上登录</a></p>
 						</td>
 					</tr>
-					<!-- <tr>
-						<td width="20px">1</td>
-						<td><img src="http://img.xpf.cc/products_img/m/p/2019/11/11/app/LkzzzAJfWtJf6323100qJ.jpg" ></td>
-						<td>金凤凰</td>
-						<td>￥55.00元</td>
-						<td>购买数量：<input type="number" min="1"/></td>
-						<td><span>小计:</span></td>
-						<td><span>&times;</span></td>
-					</tr> -->
 				</tbody>
 			</table>
 			</div>
@@ -90,6 +81,7 @@
 		$("#public").load("http://localhost/shoes/public.html")
 		new Car({
 			tbody:document.querySelector("tbody"),
+			table:document.querySelector("table"),
 			url:"http://localhost/shoes/data/goods.json"
 		})
 	</script>

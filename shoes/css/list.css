@@ -31,3 +31,4 @@ nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 #main ul li .li-b a{display: block;width: 77px; height: 21px; background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -1692px;float: left;}
 #main ul li .li-b a:hover{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat -77px -1692px;}
 #main ul li .li-b span{display: inline-block;float: right;overflow: hidden;color: #999;font:400 12px/20px ""}
+#main .pagination{height: 50px;margin: 10px 0;margin-left: 330px;}

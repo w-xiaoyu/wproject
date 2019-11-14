@@ -32,13 +32,13 @@
 	</body>
 	<script>
 		$("#public").load("http://localhost/shoes/public.html");
-		$(".aside").children("ul").children("li").hover(function() {
-			$(this).addClass("active").siblings().removeClass("active");
-			$(".cont").children("img").removeClass(" active").eq($(this).index()).addClass(" active");
-		})
 		new Msg({
 			banner:document.getElementById("banner"),
 			url:"http://localhost/shoes/data/goods.json"
 		})
+		
+		// console.log($(".aside").children("ul"))
+		// console.log($(".aside"))
+		
 	</script>
 </html>
