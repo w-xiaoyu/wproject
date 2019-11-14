@@ -26,20 +26,47 @@ class Msg {
 					str =
 						`
 						<div class="aside" index="${this.res[i].goodsId}">
+							<div class="case clear">
+								<h3>产品分类</h3>
+								<dl>
+									<dt>单鞋分类</dt>
+									<dd>女式时尚单鞋</dd>
+									<dd>高跟单鞋</dd>
+									<dd>平底单鞋</dd>
+									<dd>坡跟单鞋</dd>
+									<dd>女式内增高鞋</dd>
+								</dl>
+								<dl>
+									<dt>款式分类</dt>
+									<dd>女式时尚单鞋</dd>
+									<dd>高跟单鞋</dd>
+									<dd>平底单鞋</dd>
+									<dd>坡跟单鞋</dd>
+									<dd>女式内增高鞋</dd>
+								</dl>
+								<dl>
+									<dt>新旧分类</dt>
+									<dd>女式时尚单鞋</dd>
+									<dd>高跟单鞋</dd>
+									<dd>平底单鞋</dd>
+									<dd>坡跟单鞋</dd>
+									<dd>女式内增高鞋</dd>
+								</dl>
+							</div>
 							<div class="aside-c">
 								<div class="cont">
-									<img src="${this.res[i].img1}" class="i1 active"/>
+									<img src="${this.res[i].img}" class="i1 active"/>
 									<img src="${this.res[i].img2}" class="i1"/>
 									<img src="${this.res[i].img3}" class="i1"/>
 									<div class="min"></div>
 								</div>
 								<div class="big">
-									<img src="${this.res[i].img1}" class="big2"/>
+									<img src="${this.res[i].img}" class="big2"/>
 									<img src="${this.res[i].img2}" class=""/>
 									<img src="${this.res[i].img3}" class=""/>
 								</div>
 								<ul>
-									<li class="active"/><img src="${this.res[i].img1}"/></li>
+									<li class="active"/><img src="${this.res[i].img}"/></li>
 									<li><img src="${this.res[i].img2}"/></li>
 									<li><img src="${this.res[i].img3}"/></li>
 								</ul>

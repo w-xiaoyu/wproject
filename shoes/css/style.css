@@ -21,7 +21,8 @@ header .search .sub{background: #D2364C;width: 86px;height: 38px;border:0;}
 header .ewm{float:left;width: 229px;height: 126px;margin-top: 5px;}
 
 nav{height: 38px;margin-top: 5px;background: #f10582;position: relative;}
-nav p{float:left;font: 18px/38px "";width: 177px;height: 38px;background: #b12f5b;padding-left: 18px;color: #fff;}
+nav .nav-l{float:left;}
+nav .nav-l s{display:inline-block;font: 18px/38px "";width: 177px;height: 38px;background: #b12f5b;padding-left: 18px;color: #fff;}
 nav ul{float:left;}
 nav ul li{float: left;padding: 0 10px;}
 nav ul li a{font: 16px/38px "";color: #fff;}

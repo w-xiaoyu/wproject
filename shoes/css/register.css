@@ -1,5 +1,5 @@
 nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;}
+nav .nav-l:hover .subnav{display: block;cursor: pointer;}
 
 #banner{}
 #banner .title{font: 18px/36px "";border-bottom:1px solid #D7237E;margin-top: 20px;height: 38px;}

@@ -1,5 +1,5 @@
 nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;}
+nav .nav-l:hover .subnav{display: block;cursor: pointer;}
 
 #banner{border: solid 6px #E8E8E8;padding: 10px;margin-top: 20px;}
 #banner img{float: left;width: 720px;height: 380px;}

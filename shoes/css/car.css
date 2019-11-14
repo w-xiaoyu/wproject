@@ -1,5 +1,5 @@
 nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
+nav .nav-l:hover .subnav{display: block;cursor: pointer;}
 
 #menu{}
 #menu ul{margin: 20px 0;}

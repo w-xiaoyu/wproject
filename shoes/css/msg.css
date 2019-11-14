@@ -1,21 +1,29 @@
 nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
+nav .nav-l:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 
 #banner{margin-top: 20px;}
 #banner .a0{font: 18px/30px "";color: #666;}
-#banner .aside{width: 430px;position: relative;}
-#banner .aside .aside-c{position: relative;}
+
+.aside .case{width: 158px;margin-bottom: 12px;position: absolute;border: 1px solid #CCCCCC;}
+.aside .case h3{background-color: #EAEAEA;text-align: center;line-height: 30px;margin-bottom: 12px;}
+.aside .case dl{}
+.aside .case dl dt{border-bottom: 1px dashed #CCCCCC;font:14px/30px "" ;color: #0e0d1a;padding-left: 4px;}
+.aside .case dl dd{margin-left: 20px;font: 12px/24px "";color: #1859A5;}
+.aside .case dl dd:hover{color: #F10582;}
+
+#banner .aside{width: 430px;position: relative;left: 0;}
+#banner .aside .aside-c{position: relative;left: 170px;}
 #banner .aside .cont{width: 430px;height: 430px;overflow: hidden;}
 #banner .aside .cont img{width: 430px;height: 430px;display: none;}
 #banner .aside .cont img.active{display:block;}
 #banner .aside .cont .min{background:url(../img/dotpng.png);position: absolute;top: 0;left: 0;width: 230px;height: 230px;z-index: 100;display:none;}
-#banner .aside .big{width: 430px;height: 430px;position: absolute;top: 0;left: 440px;overflow: hidden;display:none;}
+#banner .aside .big{width: 430px;height: 430px;position: absolute;top: 0;left: 460px;overflow: hidden;display:none;}
 #banner .aside .big img{width: 800px;height: 800px;position: absolute;top: 0;left: 0;z-index: 100;display:none;}
 #banner .aside ul{width: 100%;height:40px;margin:10px 0;}
 #banner .aside ul li{float: left;width: 57px;height: 40px;margin: 0 3px;}
 #banner .aside ul li.active{border: 1px solid #ED383D;}
 #banner .aside ul li img{width: 57px;height: 40px;}
-#banner .article{position:absolute;left: 460px;top:10px;} 
+#banner .article{position:absolute;left: 630px;top:10px;} 
 #banner .article p{font: 14px/30px "";width: 435px;color: #333333;}
 #banner .article span{font: 16px/50px "";color: #666666;display: block;}
 #banner .article s{font: 16px/50px "";color: #666666;display: inline-block;}
@@ -24,3 +32,22 @@ nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 #banner .article input.num{margin-bottom: 30px;}
 #banner .article input.buy{background: #f00;float: left;border: none;color: #fff;}
 #banner .article input.car{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat 0px -988px;cursor: pointer;float: left;color:#fff;padding-left: 22px;font: 14px/24px "";margin-left: 10px;border: none;}
+
+#product{overflow: hidden;border-bottom: 1px solid #333;margin-top: 20px;}
+#product .pro-l{float: left;width: 158px;border: 1px solid #CCCCCC;}
+#product .pro-l h3{background-color: #EAEAEA;text-align: center;line-height: 30px;margin-bottom: 12px;}
+#product .pro-l ul{width: 158px;}
+#product .pro-l ul li{float: left;width: 158px;font: 12px/18px "";text-align: center; margin-bottom: 12px;}
+#product .pro-l ul li a{color: #666666;display: block;}
+#product .pro-l ul li a img{width: 135px;height: 100px;}
+#product .pro-l ul li p{width: 157px;color:#666666;}
+#product .pro-l ul li span{color: #E70066;}
+
+#product .pro-r{float: left;margin-left: 50px;}
+#product .pro-r h3{text-align: center;font: 16px/30px "";margin-bottom: 12px;color: #666666;}
+#product .pro-r ul{width: 800px;}
+#product .pro-r ul li{margin-top: 8px;width: 800px;}
+#product .pro-r ul li img{width: 800px;height: 760px;}
+
+#zhuan{}
+#zhuan span{font: 14px/24px "";padding: 16px;display: block;color: #666666;}

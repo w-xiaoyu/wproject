@@ -1,5 +1,5 @@
 nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
+nav .nav-l:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 
 #banner img{width: 100%;height: 95px;margin: 10px 0;}
 #search{background: #d2364b;}
@@ -32,8 +32,6 @@ nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 #main ul li .li-b a:hover{background: url(http://img.xpf.cc/logo/ico/ico1.gif) no-repeat -77px -1692px;}
 #main ul li .li-b span{display: inline-block;float: right;overflow: hidden;color: #999;font:400 12px/20px ""}
 #main .pagination{height: 50px;margin: 10px 0;margin-left: 330px;}
-nav .subnav{display: none;}
-nav .margin:hover .subnav{display: block;cursor: pointer;z-index: 100;}
 
 #banner img{width: 100%;height: 95px;margin: 10px 0;}
 #search{background: #d2364b;}
