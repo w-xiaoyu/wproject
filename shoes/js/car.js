@@ -27,9 +27,7 @@ class Car {
 		var num = 0;
 		for (var i = 0; i < this.res.length; i++) {
 			for (var j = 0; j < this.shopcar.length; j++) {
-				//3.拿到cookie中的id与所有的商品数据的goodId做比较
 				if (this.res[i].goodsId == this.shopcar[j].id) {
-					//4.相同了,渲染这个数据(就是添加到购物车的商品)
 					str +=
 						`
 								<tr index=${this.res[i].goodsId}>

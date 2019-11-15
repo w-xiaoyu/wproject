@@ -17,6 +17,9 @@ class Login {
 	}
 	getCookie(){
 		this.member = getCookie("member") ? JSON.parse(getCookie("member")) : [];
+		if(this.member == []){
+			alert("您还未注册！");
+		}
 		for(var i=0;i<this.member.length;i++){
 			// console.log(this.user)
 			if(this.user == "" || this.pass== ""){

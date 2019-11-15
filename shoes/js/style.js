@@ -15,8 +15,8 @@ $(".banner1").banner({
 console.log($(".banner2").find(".btns").find(".left"))
 $(".banner2").banner({
 	imgs: $(".banner2").find("img"),
-	right: $(".banner2").find(".btns").find(".left"),
-	left: $(".banner2").find(".btns").find(".right"),
+	left: $(".banner2").find(".btns").find(".left"),
+	right: $(".banner2").find(".btns").find(".right"),
 	list: false,
 	autoPlay: true,
 	delayTime: 2000,
