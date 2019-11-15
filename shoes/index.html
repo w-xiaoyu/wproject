@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
-		<section id="public"></section>
-		<section id="banner" class="margin">
+		<section id="public" class="content"></section>
+		<section id="banner" class="margin content">
 			<div class="subnav2"></div>
 			<div class="banner1">
 				<div class="imgbox">
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="new" class="margin">
+		<section id="new" class="margin content">
 			<div class="title">
 				<h3>最新上架通知</h3>
 			</div>
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="main" class="margin">
+		<section id="main" class="margin content">
 			<h4>最新上架鞋品</h4>
 			<div class="up clear">
 				<ul>
@@ -139,7 +139,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="activity" class="margin">
+		<section id="activity" class="margin content">
 			<h3 class="clear">
 				<i></i><span>你可能感兴趣的活动</span><i></i>
 			</h3>
@@ -229,6 +229,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="floor">
+			<ul>
+				<li>商品分类</li>
+				<li>最新通知</li>
+				<li>最新鞋品</li>
+				<li>最新款式</li>
+				<li>兴趣活动</li>
+			</ul>
+		</div>
 	</body>
 	<script src="libs/jquery.js"></script>
 	<script src="libs/jquery-banner.1.1.js"></script>
@@ -294,5 +303,13 @@
 			min: 3,
 			max: 13
 		});
+		
+		$(".floor").children("ul").children("li").click(function(){
+			var now = $(".content").eq($(this).index());
+			var t = now.offset().top;
+			$("html").animate({
+				scrollTop:t
+			})
+		})
 	</script>
 </html>

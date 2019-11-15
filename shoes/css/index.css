@@ -77,7 +77,6 @@
 #main .cen .cen-r ul li a{font: 12px/16px "";color: #666666;padding-right: 10px;}
 #main .cen .cen-r ul li img{width: 197px;height: 114px;}
 
-
 #activity{height: 260px;}
 #activity h3{height: 25px;margin: 10px 0;}
 #activity h3 i{width:500px;display: block;float: left;background: url(http://img.xpf.cc/logo/ico/index.gif) no-repeat 0px -373px;height: 25px;}
@@ -103,3 +102,7 @@
 #foot dl dt.dt5{background-position: -615px -120px;}
 #foot dl dd a{display: block;color: #999199;line-height: 22px;background: url(http://img.xpf.cc/logo/ico/index.gif) no-repeat -615px -200px;padding-left: 10px;}
 #foot .ewm2{background: url(http://img.xpf.cc/logo/site/weixin.jpg) no-repeat 0px 0px;width: 156px;height: 167px;float: left;}
+
+.floor{width:60px;position: fixed;right:0;top:220px;}
+.floor ul{background: #F10582;padding:0;}
+.floor ul li{cursor: pointer;line-height:60px;border-bottom: solid 1px #fff;color: #FFFFFF;text-align: center;}
